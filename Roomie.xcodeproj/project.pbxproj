@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBD1AE872C7FC39E00DD64DB /* RoomieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1AE862C7FC39E00DD64DB /* RoomieApp.swift */; };
+		CBD1AE892C7FC39E00DD64DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1AE882C7FC39E00DD64DB /* ContentView.swift */; };
+		CBD1AE8B2C7FC3A300DD64DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD1AE8A2C7FC3A300DD64DB /* Assets.xcassets */; };
+		CBD1AE8E2C7FC3A300DD64DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD1AE8D2C7FC3A300DD64DB /* Preview Assets.xcassets */; };
+		CBD1AE982C7FC3A300DD64DB /* RoomieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1AE972C7FC3A300DD64DB /* RoomieTests.swift */; };
+		CBD1AEA22C7FC3A300DD64DB /* RoomieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1AEA12C7FC3A300DD64DB /* RoomieUITests.swift */; };
+		CBD1AEA42C7FC3A300DD64DB /* RoomieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1AEA32C7FC3A300DD64DB /* RoomieUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBD1AE942C7FC3A300DD64DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD1AE7B2C7FC39E00DD64DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBD1AE822C7FC39E00DD64DB;
+			remoteInfo = Roomie;
+		};
+		CBD1AE9E2C7FC3A300DD64DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD1AE7B2C7FC39E00DD64DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBD1AE822C7FC39E00DD64DB;
+			remoteInfo = Roomie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBD1AE832C7FC39E00DD64DB /* Roomie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roomie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD1AE862C7FC39E00DD64DB /* RoomieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomieApp.swift; sourceTree = "<group>"; };
+		CBD1AE882C7FC39E00DD64DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CBD1AE8A2C7FC3A300DD64DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBD1AE8D2C7FC3A300DD64DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CBD1AE932C7FC3A300DD64DB /* RoomieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoomieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD1AE972C7FC3A300DD64DB /* RoomieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomieTests.swift; sourceTree = "<group>"; };
+		CBD1AE9D2C7FC3A300DD64DB /* RoomieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoomieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD1AEA12C7FC3A300DD64DB /* RoomieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomieUITests.swift; sourceTree = "<group>"; };
+		CBD1AEA32C7FC3A300DD64DB /* RoomieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBD1AE802C7FC39E00DD64DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD1AE902C7FC3A300DD64DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD1AE9A2C7FC3A300DD64DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBD1AE7A2C7FC39E00DD64DB = {
+			isa = PBXGroup;
+			children = (
+				CBD1AE852C7FC39E00DD64DB /* Roomie */,
+				CBD1AE962C7FC3A300DD64DB /* RoomieTests */,
+				CBD1AEA02C7FC3A300DD64DB /* RoomieUITests */,
+				CBD1AE842C7FC39E00DD64DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBD1AE842C7FC39E00DD64DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBD1AE832C7FC39E00DD64DB /* Roomie.app */,
+				CBD1AE932C7FC3A300DD64DB /* RoomieTests.xctest */,
+				CBD1AE9D2C7FC3A300DD64DB /* RoomieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBD1AE852C7FC39E00DD64DB /* Roomie */ = {
+			isa = PBXGroup;
+			children = (
+				CBD1AE862C7FC39E00DD64DB /* RoomieApp.swift */,
+				CBD1AE882C7FC39E00DD64DB /* ContentView.swift */,
+				CBD1AE8A2C7FC3A300DD64DB /* Assets.xcassets */,
+				CBD1AE8C2C7FC3A300DD64DB /* Preview Content */,
+			);
+			path = Roomie;
+			sourceTree = "<group>";
+		};
+		CBD1AE8C2C7FC3A300DD64DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CBD1AE8D2C7FC3A300DD64DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CBD1AE962C7FC3A300DD64DB /* RoomieTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBD1AE972C7FC3A300DD64DB /* RoomieTests.swift */,
+			);
+			path = RoomieTests;
+			sourceTree = "<group>";
+		};
+		CBD1AEA02C7FC3A300DD64DB /* RoomieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBD1AEA12C7FC3A300DD64DB /* RoomieUITests.swift */,
+				CBD1AEA32C7FC3A300DD64DB /* RoomieUITestsLaunchTests.swift */,
+			);
+			path = RoomieUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBD1AE822C7FC39E00DD64DB /* Roomie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBD1AEA72C7FC3A300DD64DB /* Build configuration list for PBXNativeTarget "Roomie" */;
+			buildPhases = (
+				CBD1AE7F2C7FC39E00DD64DB /* Sources */,
+				CBD1AE802C7FC39E00DD64DB /* Frameworks */,
+				CBD1AE812C7FC39E00DD64DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Roomie;
+			productName = Roomie;
+			productReference = CBD1AE832C7FC39E00DD64DB /* Roomie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBD1AE922C7FC3A300DD64DB /* RoomieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBD1AEAA2C7FC3A300DD64DB /* Build configuration list for PBXNativeTarget "RoomieTests" */;
+			buildPhases = (
+				CBD1AE8F2C7FC3A300DD64DB /* Sources */,
+				CBD1AE902C7FC3A300DD64DB /* Frameworks */,
+				CBD1AE912C7FC3A300DD64DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBD1AE952C7FC3A300DD64DB /* PBXTargetDependency */,
+			);
+			name = RoomieTests;
+			productName = RoomieTests;
+			productReference = CBD1AE932C7FC3A300DD64DB /* RoomieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBD1AE9C2C7FC3A300DD64DB /* RoomieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBD1AEAD2C7FC3A300DD64DB /* Build configuration list for PBXNativeTarget "RoomieUITests" */;
+			buildPhases = (
+				CBD1AE992C7FC3A300DD64DB /* Sources */,
+				CBD1AE9A2C7FC3A300DD64DB /* Frameworks */,
+				CBD1AE9B2C7FC3A300DD64DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBD1AE9F2C7FC3A300DD64DB /* PBXTargetDependency */,
+			);
+			name = RoomieUITests;
+			productName = RoomieUITests;
+			productReference = CBD1AE9D2C7FC3A300DD64DB /* RoomieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBD1AE7B2C7FC39E00DD64DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					CBD1AE822C7FC39E00DD64DB = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					CBD1AE922C7FC3A300DD64DB = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = CBD1AE822C7FC39E00DD64DB;
+					};
+					CBD1AE9C2C7FC3A300DD64DB = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = CBD1AE822C7FC39E00DD64DB;
+					};
+				};
+			};
+			buildConfigurationList = CBD1AE7E2C7FC39E00DD64DB /* Build configuration list for PBXProject "Roomie" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBD1AE7A2C7FC39E00DD64DB;
+			productRefGroup = CBD1AE842C7FC39E00DD64DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBD1AE822C7FC39E00DD64DB /* Roomie */,
+				CBD1AE922C7FC3A300DD64DB /* RoomieTests */,
+				CBD1AE9C2C7FC3A300DD64DB /* RoomieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBD1AE812C7FC39E00DD64DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD1AE8E2C7FC3A300DD64DB /* Preview Assets.xcassets in Resources */,
+				CBD1AE8B2C7FC3A300DD64DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD1AE912C7FC3A300DD64DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD1AE9B2C7FC3A300DD64DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBD1AE7F2C7FC39E00DD64DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD1AE892C7FC39E00DD64DB /* ContentView.swift in Sources */,
+				CBD1AE872C7FC39E00DD64DB /* RoomieApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD1AE8F2C7FC3A300DD64DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD1AE982C7FC3A300DD64DB /* RoomieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD1AE992C7FC3A300DD64DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD1AEA22C7FC3A300DD64DB /* RoomieUITests.swift in Sources */,
+				CBD1AEA42C7FC3A300DD64DB /* RoomieUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBD1AE952C7FC3A300DD64DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBD1AE822C7FC39E00DD64DB /* Roomie */;
+			targetProxy = CBD1AE942C7FC3A300DD64DB /* PBXContainerItemProxy */;
+		};
+		CBD1AE9F2C7FC3A300DD64DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBD1AE822C7FC39E00DD64DB /* Roomie */;
+			targetProxy = CBD1AE9E2C7FC3A300DD64DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CBD1AEA52C7FC3A300DD64DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBD1AEA62C7FC3A300DD64DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBD1AEA82C7FC3A300DD64DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Roomie/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DMJ833VPP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duckduckgoose.Roomie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBD1AEA92C7FC3A300DD64DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Roomie/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DMJ833VPP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duckduckgoose.Roomie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBD1AEAB2C7FC3A300DD64DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DMJ833VPP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duckduckgoose.RoomieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roomie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Roomie";
+			};
+			name = Debug;
+		};
+		CBD1AEAC2C7FC3A300DD64DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DMJ833VPP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duckduckgoose.RoomieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roomie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Roomie";
+			};
+			name = Release;
+		};
+		CBD1AEAE2C7FC3A300DD64DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DMJ833VPP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duckduckgoose.RoomieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Roomie;
+			};
+			name = Debug;
+		};
+		CBD1AEAF2C7FC3A300DD64DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DMJ833VPP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duckduckgoose.RoomieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Roomie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBD1AE7E2C7FC39E00DD64DB /* Build configuration list for PBXProject "Roomie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD1AEA52C7FC3A300DD64DB /* Debug */,
+				CBD1AEA62C7FC3A300DD64DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBD1AEA72C7FC3A300DD64DB /* Build configuration list for PBXNativeTarget "Roomie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD1AEA82C7FC3A300DD64DB /* Debug */,
+				CBD1AEA92C7FC3A300DD64DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBD1AEAA2C7FC3A300DD64DB /* Build configuration list for PBXNativeTarget "RoomieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD1AEAB2C7FC3A300DD64DB /* Debug */,
+				CBD1AEAC2C7FC3A300DD64DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBD1AEAD2C7FC3A300DD64DB /* Build configuration list for PBXNativeTarget "RoomieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD1AEAE2C7FC3A300DD64DB /* Debug */,
+				CBD1AEAF2C7FC3A300DD64DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBD1AE7B2C7FC39E00DD64DB /* Project object */;
+}
