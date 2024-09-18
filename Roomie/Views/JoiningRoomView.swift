@@ -26,8 +26,8 @@ struct JoiningRoomView: View {
                 Button("Submit") {
                     Task {
                         do {
-                            if try await roomExists(code: code) {
-                                roomID = try await getRoomID(code: code)
+                            if try await roomExists(ref: databaseRef, code: code) {
+                                roomID = try await getRoomID(ref: databaseRef, code: code)
                                 makeNewMember(username: username, roomID: roomID)
                                 login()
                             }

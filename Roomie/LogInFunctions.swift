@@ -9,6 +9,8 @@ import Foundation
 import Firebase
 import FirebaseDatabase
 
+var databaseRef = Database.database().reference()
+
 /// Adds data with a given path to the Firebase Realtime Database
 /// 
 /// - Parameter label: Title of newly stored data
@@ -17,8 +19,8 @@ import FirebaseDatabase
 /// - Parameter id: room id of data
 ///
 /// - Returns: None
-func addData(label: String, path: [String] = [], value: Any, id: String) {
-    var ref = Database.database().reference().child("rooms").child(id)
+func addData(ref: DatabaseReference, label: String, path: [String] = [], value: Any, id: String) {
+    var ref = ref.child("rooms").child(id)
     let newField = [label : value] as [String: Any]
     
     for directory in path {
@@ -32,10 +34,10 @@ func addData(label: String, path: [String] = [], value: Any, id: String) {
     }
 }
 
+
 /// Creates a brand new room
 /// - Returns: The unique room ID
-func createRoom() -> String {
-    let ref = Database.database().reference()
+func createRoom(ref: DatabaseReference) -> String {
     let newRoom = ref.child("rooms").childByAutoId()
 
     return newRoom.key ?? "ERROR"
@@ -45,8 +47,7 @@ func createRoom() -> String {
 /// - Parameters:
 ///   - code: join code generated for room
 ///   - roomID: unique ID of room
-func linkCodeToID(code: String, roomID: String) {
-    let ref = Database.database().reference()
+func linkCodeToID(ref: DatabaseReference, code: String, roomID: String) {
     let codeToID = [code : roomID] as [String: Any]
     
     ref.child("code-to-roomID").updateChildValues(codeToID) { (error, ref) in
@@ -73,7 +74,7 @@ func uniqueGenCode() async throws -> String {
     var code: String = "ERROR"
     while !unique {
         code = genCode()
-        if try await !roomExists(code: code) {
+        if try await !roomExists(ref: databaseRef, code: code) {
             unique = true
         }
     }
@@ -83,8 +84,7 @@ func uniqueGenCode() async throws -> String {
 /// - Parameter code: join code of room
 /// - Throws: Error if snapshot doesn't exist
 /// - Returns: Unique roomID
-func getRoomID(code: String) async throws -> String {
-    let ref = Database.database().reference()
+func getRoomID(ref: DatabaseReference, code: String) async throws -> String {
     var roomID = "error"
     
     return try await withCheckedThrowingContinuation { continuation in
@@ -105,7 +105,7 @@ func getRoomID(code: String) async throws -> String {
 ///   - username: username of member
 ///   - roomID: roomID of room member is part of
 func makeNewMember(username: String, roomID: String) {
-    addData(label: username, path: ["members"], value: "FILL IN LATER", id: roomID)
+    addData(ref: Database.database().reference(), label: username, path: ["members"], value: "FILL IN LATER", id: roomID)
     UserDefaults.standard.set(username, forKey: "username")
     UserDefaults.standard.set(roomID, forKey: "roomID")
 }
@@ -125,9 +125,8 @@ func logout() {
 /// - Parameter code: join code of room
 /// - Throws: error if problem retrieving from database
 /// - Returns: true if room code exists; false otherwise
-func roomExists(code: String) async throws -> Bool {
+func roomExists(ref: DatabaseReference, code: String) async throws -> Bool {
     let path = "code-to-roomID/" + code
-    let ref = Database.database().reference()
     
     return try await withCheckedThrowingContinuation { continuation in
         ref.child(path).observeSingleEvent(of: .value, with: { snapshot in

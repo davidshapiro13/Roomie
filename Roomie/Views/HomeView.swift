@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
+import Charts
+
 
 struct HomeView: View {
     @AppStorage("isLoggedIn") var isLoggedIn = false
-    
+
     var body: some View {
         VStack {
             Text("Home")
-            Button("logout") {
+            Button("Log Out") {
                 logout()
             }
         }

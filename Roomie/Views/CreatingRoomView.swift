@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseDatabase
 
 struct CreatingRoomView: View {
     @Binding var showCode: Bool
@@ -27,8 +28,8 @@ struct CreatingRoomView: View {
                 }
                 Button("Submit") {
                     showCode = true
-                    roomID = createRoom()
-                    addData(label: "room-name", value: roomname, id: roomID)
+                    roomID = createRoom(ref: databaseRef)
+                    addData(ref: databaseRef, label: "room-name", value: roomname, id: roomID)
                     makeNewMember(username: username, roomID: roomID)
                     submit()
                 }

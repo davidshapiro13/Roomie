@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseDatabase
 
 struct DisplayCodeView: View {
     @Binding var roomID: String
@@ -21,8 +22,8 @@ struct DisplayCodeView: View {
                     Task {
                         do {
                             code = try await uniqueGenCode()
-                            linkCodeToID(code: code, roomID: roomID)
-                            addData(label: "join_code", value: code, id: roomID)
+                            linkCodeToID(ref: databaseRef, code: code, roomID: roomID)
+                            addData(ref: databaseRef, label: "join_code", value: code, id: roomID)
                         }
                         catch {
                             print("Error: \(error.localizedDescription)")
