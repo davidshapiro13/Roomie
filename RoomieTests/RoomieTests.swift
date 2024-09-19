@@ -144,19 +144,19 @@ final class RoomieTests: XCTestCase {
         //Regular cases
         var rotate = 10.0
         var winner = getWinner(rotation: rotate, movieItems: items)
-        XCTAssertEqual(winner, "Movie 1")
+        XCTAssertEqual(winner, "Movie 4")
         
         rotate = 100.0
         winner = getWinner(rotation: rotate, movieItems: items)
-        XCTAssertEqual(winner, "Movie 2")
+        XCTAssertEqual(winner, "Movie 3")
         
         rotate = 200.0
         winner = getWinner(rotation: rotate, movieItems: items)
-        XCTAssertEqual(winner, "Movie 3")
+        XCTAssertEqual(winner, "Movie 2")
         
         rotate = 320.0
         winner = getWinner(rotation: rotate, movieItems: items)
-        XCTAssertEqual(winner, "Movie 4")
+        XCTAssertEqual(winner, "Movie 1")
         
         //Edge cases
         rotate = 0.0
@@ -165,7 +165,7 @@ final class RoomieTests: XCTestCase {
         
         rotate = 90.0
         winner = getWinner(rotation: rotate, movieItems: items)
-        XCTAssertEqual(winner, "Movie 2")
+        XCTAssertEqual(winner, "Movie 4")
         
         rotate = 180.0
         winner = getWinner(rotation: rotate, movieItems: items)
@@ -173,28 +173,28 @@ final class RoomieTests: XCTestCase {
         
         rotate = 270.0
         winner = getWinner(rotation: rotate, movieItems: items)
-        XCTAssertEqual(winner, "Movie 4")
+        XCTAssertEqual(winner, "Movie 2")
         
         rotate = 359.9
         winner = getWinner(rotation: rotate, movieItems: items)
-        XCTAssertEqual(winner, "Movie 4")
+        XCTAssertEqual(winner, "Movie 1")
         
         //Expanded cases
         rotate = 410.0
         winner = getWinner(rotation: rotate, movieItems: items)
-        XCTAssertEqual(winner, "Movie 1")
+        XCTAssertEqual(winner, "Movie 4")
         
         rotate = 460.0
         winner = getWinner(rotation: rotate, movieItems: items)
-        XCTAssertEqual(winner, "Movie 2")
+        XCTAssertEqual(winner, "Movie 3")
         
         rotate = 910.0
         winner = getWinner(rotation: rotate, movieItems: items)
-        XCTAssertEqual(winner, "Movie 3")
+        XCTAssertEqual(winner, "Movie 2")
         
         rotate = 1000.0
         winner = getWinner(rotation: rotate, movieItems: items)
-        XCTAssertEqual(winner, "Movie 4")
+        XCTAssertEqual(winner, "Movie 1")
     }
     
 

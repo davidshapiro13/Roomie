@@ -11,31 +11,35 @@ import Charts
 struct WheelView: View {
     @AppStorage("username") var username = ""
     @AppStorage("roomID") var roomID = ""
-    @State var rotationAngle = 0.0
+    @State private var rotationAngle: Double = 0.0
     @State var movie = ""
     @State var movies = [""]
     @State var movieItems: [MovieItem] = []
     @State var winner: String = ""
-    
     var body: some View {
         VStack {
+            
             Button("Refresh") {
                refresh()
+                
             }
             Spacer()
+            
             TextField("Your Movie Choice", text: $movie)
+
             Button("Submit") {
                 loadNewMovie(username: username, roomID: roomID, title: movie)
                 refresh()
             }
             Spacer()
-                
+            
             Button("spin") {
                 let randomRotation =  Double(Int.random(in: 360...1440))
                 rotationAngle = rotationAngle + randomRotation
-                print("again")
-                winner = getWinner(rotation: rotationAngle, movieItems: movieItems)
-                print(winner)
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    winner = getWinner(rotation: rotationAngle, movieItems: movieItems)
+                }
             }
             
             ZStack(alignment: .topTrailing) {

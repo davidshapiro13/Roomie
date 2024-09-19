@@ -77,17 +77,15 @@ extension Color {
 
 func getWinner(rotation: Double, movieItems: [MovieItem]) -> String {
     let slice = 360.0 / Double(movieItems.count)
-    let actualRotation = rotation.truncatingRemainder(dividingBy: 360.0)
-    
+    var actualRotation = 360.0 - rotation.truncatingRemainder(dividingBy: 360.0)
+    if actualRotation == 360.0 {
+        actualRotation = 0.0
+    }
     for i in 1...movieItems.count {
-        var lower = 0.0
-        if i != 1 {
-            lower = slice * (Double(i) - 1.0)
-        }
-        
+        let lower = slice * (Double(i) - 1.0)
         let lowerBound = actualRotation >= lower
         let upperBound = actualRotation < slice * Double(i)
-        
+
         if  upperBound && lowerBound {
             return movieItems[i-1].title
         }
