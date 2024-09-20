@@ -24,9 +24,11 @@ struct LoginView: View {
                 Button("Create Room") {
                     creatingRoom = true
                 }.buttonStyle(BorderedButtonStyle())
+                 .accessibilityLabel("CreateRoom")
                 Button("Join Room") {
                     joiningRoom = true
                 }.buttonStyle(BorderedButtonStyle())
+                 .accessibilityLabel("JoinRoom")
                 Spacer()
                 Spacer()
             }

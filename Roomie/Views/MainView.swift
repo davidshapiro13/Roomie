@@ -10,10 +10,12 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            HomeView().badge(0).tabItem {
-                    Label("Hom2e", systemImage: "house") }
-            WheelView().badge(0).tabItem {
+            HomeView().tabItem {
+                    Label("Home", systemImage: "house") }
+            .accessibilityLabel("homeTab")
+            WheelView().tabItem {
                     Label("Wheel", systemImage: "clock.arrow.2.circlepath") }
+            .accessibilityLabel("wheelTab")
         }
     }
 }

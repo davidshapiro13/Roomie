@@ -26,8 +26,31 @@ final class RoomieUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+        
+        //Wheel Page
+        let wheelTab = app.buttons["Wheel"]
+        wheelTab.tap()
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let spinButton = app.buttons["Spin"]
+        XCTAssertTrue(spinButton.exists, "Spin Button should exist")
+        
+        for i in 0..<100 {
+            let firstRotation = app.staticTexts["RotationAngle"]
+            spinButton.tap()
+            
+            let expected = expectation(description: "Waiting for spin")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        expected.fulfill()
+            }
+            waitForExpectations(timeout: 1.5)
+            
+            let winner = app.staticTexts["Result"]
+            XCTAssertTrue(winner.exists, "winner should exist.")
+            
+            let resultRotation = app.staticTexts["RotationAngle"]
+            XCTAssertNotEqual(firstRotation, resultRotation, "Rotation should change after spinning.")
+            
+        }
     }
     
 
@@ -40,3 +63,24 @@ final class RoomieUITests: XCTestCase {
         }
     }
 }
+
+/*
+ If needed later
+ 
+ //Get there
+ 
+ //Login Page
+ let joinButton = app.buttons["JoinRoom"]
+ joinButton.tap()
+ 
+ //Joining Page
+ let codeTextField = app.textFields["CodeField"]
+     codeTextField.tap()
+     codeTextField.typeText("KBHPN")
+ 
+ let nameTextField = app.textFields["NameField"]
+     nameTextField.tap()
+     nameTextField.typeText("UI-Test")
+ let loginButton = app.buttons["login"]
+ loginButton.tap()
+ */

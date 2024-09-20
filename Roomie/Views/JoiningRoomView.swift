@@ -19,9 +19,11 @@ struct JoiningRoomView: View {
                 Text(errorText)
                 Text("Room Code")
                 TextField("Code", text: $code).border(Color.gray).padding(50)
+                    .accessibilityLabel("CodeField")
                 Text("Your Name")
                 HStack {
                     TextField("Name", text: $username).border(Color.gray).padding(50)
+                    .accessibilityLabel("NameField")
                 }
                 Button("Submit") {
                     Task {
@@ -39,7 +41,7 @@ struct JoiningRoomView: View {
                             print("Error: \(error.localizedDescription)")
                         }
                     }
-                }
+                }.accessibilityLabel("login")
             }
         }
     }

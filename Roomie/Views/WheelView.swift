@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Charts
+import Combine
 
 struct WheelView: View {
     @AppStorage("username") var username = ""
@@ -16,6 +17,7 @@ struct WheelView: View {
     @State var movies = [""]
     @State var movieItems: [MovieItem] = []
     @State var winner: String = ""
+    
     var body: some View {
         VStack {
             
@@ -33,14 +35,15 @@ struct WheelView: View {
             }
             Spacer()
             
-            Button("spin") {
-                let randomRotation =  Double(Int.random(in: 360...1440))
+            Button("Spin") {
+                let randomRotation =  Double(Int.random(in: 1440...3600))
+                
                 rotationAngle = rotationAngle + randomRotation
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     winner = getWinner(rotation: rotationAngle, movieItems: movieItems)
                 }
-            }
+            }.accessibilityIdentifier("Spin")
             
             ZStack(alignment: .topTrailing) {
                 Chart {
@@ -59,7 +62,7 @@ struct WheelView: View {
                     refresh()
                 }
                 .rotationEffect(.degrees(rotationAngle))
-                .animation(.easeInOut(duration: 1), value: rotationAngle)
+                .animation(.easeInOut(duration: 1.5), value: rotationAngle)
                 
                 HStack {
                     Spacer()
@@ -69,7 +72,12 @@ struct WheelView: View {
                     Spacer()
                 }
             }
-            Text(winner)
+            Text(winner).accessibilityIdentifier("Result")
+            
+            #if DEBUG
+                Text(String(rotationAngle))
+                .accessibilityIdentifier("RotationAngle")
+            #endif
         }
         
     }

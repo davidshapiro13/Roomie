@@ -81,13 +81,13 @@ func getWinner(rotation: Double, movieItems: [MovieItem]) -> String {
     if actualRotation == 360.0 {
         actualRotation = 0.0
     }
-    for i in 1...movieItems.count {
-        let lower = slice * (Double(i) - 1.0)
+    for i in 0..<movieItems.count {
+        let lower = slice * Double(i)
         let lowerBound = actualRotation >= lower
-        let upperBound = actualRotation < slice * Double(i)
+        let upperBound = actualRotation < slice * Double(i+1)
 
         if  upperBound && lowerBound {
-            return movieItems[i-1].title
+            return movieItems[i].title
         }
     }
     
