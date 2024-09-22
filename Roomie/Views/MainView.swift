@@ -13,6 +13,10 @@ struct MainView: View {
             HomeView().tabItem {
                     Label("Home", systemImage: "house") }
             .accessibilityLabel("homeTab")
+            GoalView().tabItem {
+                Label("Goals", systemImage: "checklist")
+            }
+            .accessibilityLabel("goalTab")
             WheelView().tabItem {
                     Label("Wheel", systemImage: "clock.arrow.2.circlepath") }
             .accessibilityLabel("wheelTab")
