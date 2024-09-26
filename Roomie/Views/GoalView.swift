@@ -39,6 +39,7 @@ struct GoalView: View {
     }
     
     func refresh() {
+        goalText = ""
         Task {
             do {
                 goals = try await getGoals(ref: databaseRef, roomID: roomID)

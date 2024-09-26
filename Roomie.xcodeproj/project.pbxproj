@@ -16,6 +16,9 @@
 		CB51831B2C938E110073F7BB /* WheelFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51831A2C938E110073F7BB /* WheelFunctions.swift */; };
 		CB9A54A02C9E155800ECD0A7 /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A549F2C9E155800ECD0A7 /* GoalView.swift */; };
 		CB9A54A22C9E387A00ECD0A7 /* GoalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A54A12C9E387A00ECD0A7 /* GoalFunctions.swift */; };
+		CB9A54A42CA0F5BC00ECD0A7 /* ChoreSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A54A32CA0F5BB00ECD0A7 /* ChoreSettingsView.swift */; };
+		CB9A54A62CA0F64200ECD0A7 /* ChoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A54A52CA0F64200ECD0A7 /* ChoreFunctions.swift */; };
+		CBB6604C2CA5CD6D00CA1C72 /* ChoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB6604B2CA5CD6D00CA1C72 /* ChoreView.swift */; };
 		CBD1AE872C7FC39E00DD64DB /* RoomieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1AE862C7FC39E00DD64DB /* RoomieApp.swift */; };
 		CBD1AE8B2C7FC3A300DD64DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD1AE8A2C7FC3A300DD64DB /* Assets.xcassets */; };
 		CBD1AE8E2C7FC3A300DD64DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD1AE8D2C7FC3A300DD64DB /* Preview Assets.xcassets */; };
@@ -82,6 +85,9 @@
 		CB51831A2C938E110073F7BB /* WheelFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelFunctions.swift; sourceTree = "<group>"; };
 		CB9A549F2C9E155800ECD0A7 /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 		CB9A54A12C9E387A00ECD0A7 /* GoalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalFunctions.swift; sourceTree = "<group>"; };
+		CB9A54A32CA0F5BB00ECD0A7 /* ChoreSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreSettingsView.swift; sourceTree = "<group>"; };
+		CB9A54A52CA0F64200ECD0A7 /* ChoreFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreFunctions.swift; sourceTree = "<group>"; };
+		CBB6604B2CA5CD6D00CA1C72 /* ChoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreView.swift; sourceTree = "<group>"; };
 		CBD1AE832C7FC39E00DD64DB /* Roomie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roomie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD1AE862C7FC39E00DD64DB /* RoomieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomieApp.swift; sourceTree = "<group>"; };
 		CBD1AE8A2C7FC3A300DD64DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,10 +162,13 @@
 				CBD76CAC2C88BD77009ABA26 /* ContentView.swift */,
 				CB51830F2C8BF2AA0073F7BB /* HomeView.swift */,
 				CB5183182C938B050073F7BB /* MainView.swift */,
+				CB9A54A32CA0F5BB00ECD0A7 /* ChoreSettingsView.swift */,
+				CB9A54A52CA0F64200ECD0A7 /* ChoreFunctions.swift */,
 				CB9A549F2C9E155800ECD0A7 /* GoalView.swift */,
 				CB5183162C938ABF0073F7BB /* WheelView.swift */,
 				CB51830D2C8BF2840073F7BB /* LoginView.swift */,
 				CBD76CB02C88BFA1009ABA26 /* DisplayCodeView.swift */,
+				CBB6604B2CA5CD6D00CA1C72 /* ChoreView.swift */,
 				CBD76CAE2C88BF5B009ABA26 /* JoiningRoomView.swift */,
 			);
 			path = Views;
@@ -386,16 +395,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9A54A42CA0F5BC00ECD0A7 /* ChoreSettingsView.swift in Sources */,
 				CB9A54A22C9E387A00ECD0A7 /* GoalFunctions.swift in Sources */,
 				CB51831B2C938E110073F7BB /* WheelFunctions.swift in Sources */,
 				CB5183172C938ABF0073F7BB /* WheelView.swift in Sources */,
 				CB5183192C938B050073F7BB /* MainView.swift in Sources */,
 				CBD76CAF2C88BF5B009ABA26 /* JoiningRoomView.swift in Sources */,
 				CB51830E2C8BF2840073F7BB /* LoginView.swift in Sources */,
+				CB9A54A62CA0F64200ECD0A7 /* ChoreFunctions.swift in Sources */,
 				CB9A54A02C9E155800ECD0A7 /* GoalView.swift in Sources */,
 				CBD1AE872C7FC39E00DD64DB /* RoomieApp.swift in Sources */,
 				CBD76CB12C88BFA1009ABA26 /* DisplayCodeView.swift in Sources */,
 				CBD76CAB2C88BCEB009ABA26 /* CreatingRoomView.swift in Sources */,
+				CBB6604C2CA5CD6D00CA1C72 /* ChoreView.swift in Sources */,
 				CB5183102C8BF2AA0073F7BB /* HomeView.swift in Sources */,
 				CBD76CAD2C88BD77009ABA26 /* ContentView.swift in Sources */,
 				CBD1AEE82C8405A300DD64DB /* LogInFunctions.swift in Sources */,

@@ -105,7 +105,18 @@ func getRoomID(ref: DatabaseReference, code: String) async throws -> String {
 ///   - username: username of member
 ///   - roomID: roomID of room member is part of
 func makeNewMember(username: String, roomID: String) {
+    
     addData(ref: Database.database().reference(), label: username, path: ["members"], value: "FILL IN LATER", id: roomID)
+    
+    for chore in kitchen_chores {
+        addData(ref:Database.database().reference(), label: chore, path: [CHORES, KITCHEN], value: NEVER, id: roomID)
+    }
+    for chore in bathroom_chores {
+        addData(ref:Database.database().reference(), label: chore, path: [CHORES, BATHROOM], value: NEVER, id: roomID)
+    }
+    for chore in common_room_chores {
+        addData(ref:Database.database().reference(), label: chore, path: [CHORES, COMMONROOM], value: NEVER, id: roomID)
+    }
     UserDefaults.standard.set(username, forKey: "username")
     UserDefaults.standard.set(roomID, forKey: "roomID")
 }

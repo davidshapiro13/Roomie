@@ -73,11 +73,6 @@ struct WheelView: View {
                 }
             }
             Text(winner).accessibilityIdentifier("Result")
-            
-            #if DEBUG
-                Text(String(rotationAngle))
-                .accessibilityIdentifier("RotationAngle")
-            #endif
         }
         
     }
